@@ -1,0 +1,66 @@
+/* * * * * base * * * * */
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
+
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: $font-main;
+	font-weight: $font-weight-light;
+	font-size: 1.8rem;
+	line-height: 160%;
+	@media $small {
+		font-size:1.6rem;
+	}
+}
+
+p {
+	hyphens: auto;
+}
+
+.container{
+	width: $container-default-width;
+	max-width: $container-max-width;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-family: $font-main;
+	font-weight: $font-weight-bold;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    top: -25px;
+    @media $small {
+    	top: -100px;
+    }
+    @media $large {
+    	top:0;
+    }
+}

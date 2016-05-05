@@ -1,0 +1,7 @@
+.DS_Store
+.tmp
+.log
+builds/**/img/*
+nautilus.sublime-project
+nautilus.sublime-workspace
+src

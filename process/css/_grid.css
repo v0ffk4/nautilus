@@ -1,0 +1,13 @@
+.col-left,
+.col-right {
+	min-width: 10vw;
+	display: none;
+	@media $small {
+		display: flex;
+	}
+}
+
+.col-cent {
+	width: 80vw;
+	margin: 0 auto;
+}

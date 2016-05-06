@@ -1,3 +1,8 @@
 @import "normalize";
 @import "variables";
 @import "base";
+@import "grid";
+@import "modules/header";
+@import "modules/slider";
+@import "sections/categories";
+@import "sections/actions";

@@ -1,0 +1,30 @@
+#categories {
+	
+	.col-cent {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.category {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin:0 5rem;
+		
+		img {
+			height: 6rem;
+			margin: 3rem 0 1rem 0;
+		}
+
+		h4 {
+			font-size:90%;
+		}
+
+		p {
+			margin: 0.5rem 0 0 0;
+		}
+
+	} /* category */
+
+} /* #categories  */

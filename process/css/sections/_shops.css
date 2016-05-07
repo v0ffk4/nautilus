@@ -58,7 +58,7 @@
 
 #gMap {
 	height: 360px;
-	background-color: red;
+	background-color: $red;
 }
 
 #shop-photos {
@@ -68,5 +68,5 @@
 .shop-photo {
 	height: 135px;
 	flex-basis:25%;
-	border: 1px solid red;
+	border: 1px solid $red;
 }

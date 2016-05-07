@@ -1,0 +1,30 @@
+#about {
+	display: flex;
+	background-color: $light-grey;
+	border-top: 1px solid $medium-grey;
+	
+	.col-left {
+		position: relative;
+	}
+
+	.col-left > img {
+		width: 338px;
+		height: 335px;
+		position: absolute;
+		right: -70px;
+		top: 20px;
+	}
+
+	#about-container {
+		padding-bottom: 3rem;
+	}
+
+	h2 {
+		margin: 5rem 0;
+	}
+
+	p {
+		column-count: 2;
+		column-gap: 40px;
+	}
+}

@@ -13,6 +13,8 @@ $red:			#f93849;
 $purple:		#432261;
 $blue:			#81bef7;
 $dark-grey:		#141414;
+$medium-grey:	#e5e5e5;
+$light-grey:	#fafaf9;
 
 $small:		screen and (min-width:600px);
 $medium:	screen and (min-width:900px);

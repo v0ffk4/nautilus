@@ -737,7 +737,7 @@ img {
 /* address */
 #gMap {
     height: 360px;
-    background-color: red;
+    background-color: #f93849;
 }
 #shop-photos {
     display: -webkit-box;
@@ -750,7 +750,7 @@ img {
     -webkit-flex-basis: 25%;
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%;
-    border: 1px solid red;
+    border: 1px solid #f93849;
 }
 #career {}
 #career-container {
@@ -820,3 +820,35 @@ img {
     color: #81bef7;
 }
 /* career-stripe */
+#about {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #fafaf9;
+    border-top: 1px solid #e5e5e5;
+}
+#about .col-left {
+    position: relative;
+}
+#about .col-left > img {
+    width: 338px;
+    height: 335px;
+    position: absolute;
+    right: -70px;
+    top: 20px;
+}
+#about #about-container {
+    padding-bottom: 3rem;
+}
+#about h2 {
+    margin: 5rem 0;
+}
+#about p {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+}

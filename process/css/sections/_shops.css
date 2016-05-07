@@ -1,14 +1,11 @@
-#shops-content {
+#shops {
+	margin-bottom: 15rem;
+}
+
+#shops-container {
 	display: flex;
 	flex-direction: column;
-	
-	.address {
-
-	}
-
 } /* shops-content */
-
-
 
 .shops-stripe {
 	width: 100%;
@@ -24,14 +21,14 @@
 		margin-top: -80px;
 		margin-left: 15px;
 		background-image: url(/img/shops-header-icon.svg);
-		background-repeat: no repeat;
+		background-repeat: no-repeat;
 	}
 
 	h2 {
 		position: absolute;
 		top: -12px;
 		left: 115px;
-		color: #432261;
+		color: $purple;
 		font-weight: $font-weight-light;
 	}
 } /* shops-stripe */

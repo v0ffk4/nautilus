@@ -9,9 +9,10 @@ $font-size-large:	1.8rem;
 $font-size-medium:	1.4rem;
 $font-size-small:	1rem;
 
-$orange:		#ffb12f;
 $red:			#f93849;
-$purple:		#6d73c2;
+$purple:		#432261;
+$blue:			#81bef7;
+$dark-grey:		#141414;
 
 $small:		screen and (min-width:600px);
 $medium:	screen and (min-width:900px);

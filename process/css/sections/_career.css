@@ -1,0 +1,62 @@
+#career {
+}
+
+#career-container {
+	display: flex;
+	flex-direction: column;
+	
+	.career {
+		margin-left: 30%;
+		border-bottom: 2px dotted $dark-grey;
+	}
+
+	.openings {
+		display: flex;
+		justify-content: space-between;
+
+		.position {
+			margin: 2rem 0 0 0;
+			width: 45%;
+			padding-left: 2rem;
+			border-left: 2px dotted $dark-grey;
+
+			h3 {
+			}
+
+			p {
+				margin-bottom:0;
+			}
+		} /* position */
+	} /* openings */
+} /* career-content */
+
+.tribal {
+	width: 300px;
+	margin: 0 auto;
+}
+
+.career-stripe {
+	width: 100%;
+	height: 7px;
+	position: relative;
+	background-image: url(/img/career-stripe.svg);
+	z-index:250;
+	margin-bottom: 3rem;
+
+	.career-header-icon {
+		width: 208px;
+		height: 212px;
+		margin-top: -80px;
+		margin-left: 15px;
+		background-image: url(/img/career-header-icon.svg);
+		background-repeat: no-repeat;
+	}
+	
+	h2 {
+		position: absolute;
+		top: 8px;
+		left: 60px;
+		transform: rotate(32deg);
+		color: $blue;
+	}
+} /* career-stripe */

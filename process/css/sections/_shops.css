@@ -1,0 +1,32 @@
+#shops-content {
+	display: flex;
+	flex-direction: column;
+
+	.shops-stripe {
+		width: 100%;
+		height: 6px;
+		position: relative;
+		background-image: url(/img/shops-stripe.svg);
+		z-index:250;
+
+		.shops-header-icon {
+			width: 260px;
+			height: 110px;
+			margin-top: -80px;
+			margin-left: 15px;
+			background-image: url(/img/shops-header-icon.svg);
+			background-repeat: no repeat;
+		}
+
+		h2 {
+			position: absolute;
+			top: -12px;
+			left: 115px;
+			color: #432261;
+			font-weight: $font-weight-light;
+		}
+
+	} /* shops-stripe */
+
+
+} /* shops-content */

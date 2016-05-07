@@ -16,8 +16,6 @@
 	.col-cent {
 		display: flex;
 		flex-wrap:wrap;
-		height: 200ox;
-		background-color: green;
 	}
 
 	.col-right {

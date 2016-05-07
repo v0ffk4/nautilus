@@ -1,11 +1,12 @@
 #main-slider {
 	.col-cent {
-		height: 60vh;
-		background-color: red;
+		height: 40vh;
+		background-image: url(/img/main-banner.jpg);
 		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content:center;
+
 	}
 
 	.slider-arrows {

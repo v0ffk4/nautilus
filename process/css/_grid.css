@@ -1,13 +1,19 @@
+#wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
 .col-left,
 .col-right {
-	min-width: 10vw;
+	min-width: 20%;
 	display: none;
 	@media $small {
 		display: flex;
+		flex-direction: column;
 	}
 }
 
 .col-cent {
-	width: 80vw;
+	width: 60%;
 	margin: 0 auto;
 }

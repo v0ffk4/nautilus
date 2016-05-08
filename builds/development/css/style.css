@@ -852,3 +852,40 @@ img {
        -moz-column-gap: 40px;
             column-gap: 40px;
 }
+#partners .partners-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+#partners ul.partner {
+    margin: 3rem 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    /* li */
+}
+#partners ul.partner li {
+    margin: 0 auto;
+    max-width: 300px;
+}
+#partners ul.partner li figure {
+    padding: 0;
+    margin: 0 0 5rem 0;
+    text-align: center;
+}
+#partners ul.partner li img {
+    height: 75px;
+    width: 150px;
+    margin: 3rem auto;
+}

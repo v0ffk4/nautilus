@@ -1,0 +1,36 @@
+#partners {
+
+	.partners-container {
+		display: flex;
+		
+	}
+
+	ul.partner {
+		margin: 3rem 0 0 0;
+		padding:0;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		
+		li {
+			margin: 0 auto;
+			max-width: 300px;
+			
+
+			figure {
+				padding: 0;
+				margin: 0 0 5rem 0;
+				text-align: center;
+			}
+
+			img { height: 75px;
+				width: 150px;
+				margin: 3rem auto;
+
+			}
+		} /* li */
+	}
+
+
+}

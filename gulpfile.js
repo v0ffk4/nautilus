@@ -28,6 +28,7 @@ gulp.task('htmlHuyak', function() {
   gulp.src(dev + '*.html')
   .pipe(htmlmin({
     collapseWhitespace: true
+
   }))
 
   .on('error', gutil.log)

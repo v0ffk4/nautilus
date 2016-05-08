@@ -1,0 +1,22 @@
+#feedback {
+
+} /* section */
+
+#feedback-container {
+		
+	form {
+		display: flex;
+	}
+
+	.form-column {
+		text-align: right;
+		flex-basis: 50%;
+	}
+
+
+
+	input {
+		margin-left: 2rem;
+	}
+
+}

@@ -1,22 +1,27 @@
 #header {
-
-	display: flex;
+	width: 100%;
 	position: fixed;
 	z-index: 255;
+
+	@media $small {
+	display: flex;
 	width: 100%;
+	}
 
 	.col-left {
+
+		@media $small {
+			display: flex;
+		}
+		
 		img {
+			display: block;
 			height: 74px;
 			margin-left: auto;
-		}
+		} /* img */
 
 	} /* col-left */
 
-	.col-cent {
-		display: flex;
-		flex-wrap:wrap;
-	}
 
 	.col-right {
 		background-image: url(/img/header-stripe.png);
@@ -32,16 +37,27 @@
 
 		
 	nav.navbar-lrg {
+		display: block;
+		width:50%;
+		height: 50px;
+		float: right;
 		background-image: url(/img/header-stripe.png);
 		background-repeat: repeat-x;
-		display: flex;
-		justify-content: flex-end;
-		flex-grow: 1;
-	}
+		@media $small {
+			height: auto;
+			float: none;
+			display: flex;
+			justify-content: flex-end;
+			flex-grow: 1;
+		}
+	} /* navbar-lrg */
 
 	ul.navbar-lrg {
-		display: flex;
-		list-style: none;
+		display: none;
+		@media $small {
+			display: flex;
+			list-style: none;
+		}
 	}
 	
 	li.navbar-lrg {
@@ -52,7 +68,14 @@
 	}
 
 	img.logo {
-		height: 74px;
+		width: 50%;
+		display: inline;
+		@media $small {
+			width: auto;
+			height: 74px;
+		}
+		
+		
 	}
 
 } /* header */

@@ -415,6 +415,7 @@ img {
 .col-left, .col-right {
     min-width: 20%;
     display: none;
+    background-color: red;
 }
 @media screen and (min-width:600px) {
     .col-left, .col-right {
@@ -430,32 +431,32 @@ img {
     }
 }
 .col-cent {
-    width: 60%;
-    margin: 0 auto;
-}
-#header {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    position: fixed;
-    z-index: 255;
     width: 100%;
 }
+@media screen and (min-width:600px) {
+    .col-cent {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+#header {
+    width: 100%;
+    position: fixed;
+    z-index: 255;
+}
+#header .col-left {
+    /* img */
+}
 #header .col-left img {
+    display: block;
     height: 74px;
     margin-left: auto;
 }
 /* col-left */
-#header .col-cent {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-}
 #header .col-right {
     background-image: url(/img/header-stripe.png);
     background-repeat: repeat-x;
@@ -467,27 +468,16 @@ img {
 }
 /* col right */
 #header nav.navbar-lrg {
+    display: block;
+    width: 50%;
+    height: 50px;
+    float: right;
     background-image: url(/img/header-stripe.png);
     background-repeat: repeat-x;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
 }
+/* navbar-lrg */
 #header ul.navbar-lrg {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
+    display: none;
 }
 #header li.navbar-lrg {
     margin-left: 25px;
@@ -496,7 +486,58 @@ img {
     font-weight: 600;
 }
 #header img.logo {
-    height: 74px;
+    width: 50%;
+    display: inline;
+}
+@media screen and (min-width:600px) {
+    #header {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+    }
+}
+@media screen and (min-width:600px) {
+    #header .col-left {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+@media screen and (min-width:600px) {
+    #header nav.navbar-lrg {
+        height: auto;
+        float: none;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+    }
+}
+@media screen and (min-width:600px) {
+    #header ul.navbar-lrg {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        list-style: none;
+    }
+}
+@media screen and (min-width:600px) {
+    #header img.logo {
+        width: auto;
+        height: 74px;
+    }
 }
 /* header */
 #main-slider .col-cent {
@@ -910,14 +951,7 @@ img {
 }
 /* section */
 #feedback-container form {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: none;
 }
 #feedback-container .form-column {}
 #feedback-container label {
@@ -947,6 +981,18 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     padding: 10px 15px 15px 25px;
+}
+@media screen and (min-width:600px) {
+    #feedback-container form {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
 }
 #footer {
     margin-top: 5rem;

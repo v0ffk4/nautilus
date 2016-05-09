@@ -12,8 +12,11 @@ $input-margin: 10px;
 #feedback-container {
 		
 	form {
-		display: flex;
-		justify-content: space-between;
+		display: none;
+		@media $small {
+			display: flex;
+			justify-content: space-between;
+		}
 	}
 
 	.form-column {

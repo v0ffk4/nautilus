@@ -1,5 +1,7 @@
 #partners {
 
+	margin: 5rem 0;
+
 	.partners-container {
 		display: flex;
 		
@@ -30,7 +32,8 @@
 		} /* li */
 	} /* partner */
 	img {
+
 		height: 8px;
-		margin: 0 auto;
+		margin: 5rem auto 0 auto;
 	}
 } /* section */

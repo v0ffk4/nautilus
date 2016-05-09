@@ -500,7 +500,9 @@ img {
 }
 /* header */
 #main-slider .col-cent {
-    height: 40vh;
+    height: 68vh;
+    background-size: cover;
+    background-position: center;
     background-image: url(/img/main-banner.jpg);
     position: relative;
     display: -webkit-box;
@@ -792,8 +794,8 @@ img {
 }
 /* career-content */
 .tribal {
+    margin: 5rem auto 5rem auto;
     width: 300px;
-    margin: 0 auto;
 }
 .career-stripe {
     width: 100%;
@@ -852,6 +854,9 @@ img {
        -moz-column-gap: 40px;
             column-gap: 40px;
 }
+#partners {
+    margin: 5rem 0;
+}
 #partners .partners-container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -894,23 +899,148 @@ img {
 /* partner */
 #partners img {
     height: 8px;
-    margin: 0 auto;
+    margin: 5rem auto 0 auto;
 }
 /* section */
-#feedback {}
+#feedback {
+    margin: 5rem 0;
+}
+#feedback h2 {
+    margin-bottom: 3rem;
+}
 /* section */
 #feedback-container form {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
-#feedback-container .form-column {
+#feedback-container .form-column {}
+#feedback-container label {
+    display: block;
     text-align: right;
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
+    margin-top: 0px;
+}
+#feedback-container input, #feedback-container textarea {
+    margin-left: 10px;
+}
+#feedback-container textarea {
+    resize: none;
+    vertical-align: top;
+    border: 1px solid transparent;
+    background-image: url(/img/background-textarea.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px 15px 20px 25px;
+}
+#feedback-container .textarea-header {
+    display: inline-block;
+    padding-top: 12px;
 }
 #feedback-container input {
-    margin-left: 2rem;
+    border: 1px solid transparent;
+    background-image: url(/img/background-input.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px 15px 15px 25px;
 }
+#footer {
+    margin-top: 5rem;
+    height: 200px;
+    background-image: url(/img/footer-wave.svg), url(/img/footer-bottom.svg);
+    background-size: 1%, 100%;
+    background-repeat: repeat-x, no-repeat;
+    background-position: top, bottom;
+}
+/* footer */
+#footer-container {
+    position: relative;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.fish {
+    position: absolute;
+    width: 260px;
+    top: -35px;
+}
+.footer-panel {
+    width: 60%;
+    min-width: 450px;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+}
+.footer-panel nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+.footer-panel nav ul {
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+/* nav */
+.footer-panel .footer-content-bottom {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.footer-panel .social {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.footer-panel .social img {
+    width: 30px;
+    margin-left: 15px;
+}
+/* footer-panel */

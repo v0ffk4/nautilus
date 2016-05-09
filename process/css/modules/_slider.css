@@ -1,6 +1,8 @@
 #main-slider {
 	.col-cent {
-		height: 40vh;
+		height: 68vh;
+		background-size: cover;
+		background-position: center;
 		background-image: url(/img/main-banner.jpg);
 		position: relative;
 		display: flex;

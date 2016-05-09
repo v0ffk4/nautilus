@@ -1,4 +1,11 @@
+$input-margin: 10px;
+
 #feedback {
+	margin: 5rem 0;
+
+	h2 {
+		margin-bottom: 3rem;
+	}
 
 } /* section */
 
@@ -6,17 +13,44 @@
 		
 	form {
 		display: flex;
+		justify-content: space-between;
 	}
 
 	.form-column {
-		text-align: right;
-		flex-basis: 50%;
 	}
 
+	label {
+		display: block;
+		text-align: right;
+		margin-top: 0px;
+	}
+	
+	input, textarea {
+		margin-left: $input-margin;
+	}
 
+	textarea {
+		resize: none;
+		vertical-align: top;
+  		border: 1px solid transparent;
+		background-image: url(/img/background-textarea.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		padding:15px 15px 20px 25px;
 
+	}
+
+	.textarea-header {
+		display: inline-block;
+		padding-top: 12px;
+	}
+	
 	input {
-		margin-left: 2rem;
+  		border: 1px solid transparent;
+		background-image: url(/img/background-input.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		padding:10px 15px 15px 25px;
 	}
 
 }

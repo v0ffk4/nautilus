@@ -34,6 +34,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-end;
+	padding: 0 $small-side-padding;
 
 	nav {
 		display: none;
@@ -53,8 +54,9 @@
 	
 	.footer-content-bottom {
 		width: 100%;
-		text-align: center;
-		margin-top: 120px;
+		text-align: right;
+		margin-top: 40px;
+		margin-right: $small-side-margin;
 		@media $small{ 
 			margin-top: inherit;
 			display: flex;

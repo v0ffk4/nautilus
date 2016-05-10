@@ -1212,6 +1212,7 @@ img {
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
             align-items: flex-end;
+    padding: 0 2rem;
 }
 .footer-panel nav {
     display: none;
@@ -1232,8 +1233,9 @@ img {
 /* nav */
 .footer-panel .footer-content-bottom {
     width: 100%;
-    text-align: center;
-    margin-top: 120px;
+    text-align: right;
+    margin-top: 40px;
+    margin-right: $small-side-margin;
 }
 .footer-panel .social img {
     display: inline;

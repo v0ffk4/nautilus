@@ -1,10 +1,13 @@
 #footer {
 	margin-top: 5rem;
-	min-height:200px;
 	background-image: url(/img/footer-wave.svg), url(/img/footer-bottom.svg);
 	background-size: 1%, 100%;
 	background-repeat: repeat-x, no-repeat;
 	background-position: top, bottom;
+
+	@media $small {
+		height:200px;
+	}
 } /* footer */
 
 #footer-container {

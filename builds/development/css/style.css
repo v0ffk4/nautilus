@@ -1153,11 +1153,15 @@ img {
 }
 #footer {
     margin-top: 5rem;
-    min-height: 200px;
     background-image: url(/img/footer-wave.svg), url(/img/footer-bottom.svg);
     background-size: 1%, 100%;
     background-repeat: repeat-x, no-repeat;
     background-position: top, bottom;
+}
+@media screen and (min-width:600px) {
+    #footer {
+        height: 200px;
+    }
 }
 /* footer */
 #footer-container {

@@ -2,25 +2,40 @@
 }
 
 #career-container {
+	@media $small {
 	display: flex;
 	flex-direction: column;
+	}
 	
 	.career {
 		margin-left: 30%;
 		border-bottom: 2px dotted $dark-grey;
+		margin-right:2rem;
+	}
+
+	h2 {
+		text-align: right;
+	}
+
+	h3.section-header {
+		margin: 0 0 2rem 4rem;
+		line-height: 2rem;
 	}
 
 	.openings {
-		display: flex;
-		justify-content: space-between;
+		margin: 0 2rem;
+		@media $small {
+			display: flex;
+			justify-content: space-between;
+		}
 
 		.position {
-			margin: 2rem 0 0 0;
-			width: 45%;
 			padding-left: 2rem;
 			border-left: 2px dotted $dark-grey;
-
-			h3 {
+			@media$small {
+			margin: 2rem 0 0 0;
+			width: 45%;
+			
 			}
 
 			p {
@@ -46,6 +61,7 @@
 	.career-header-icon {
 		width: 208px;
 		height: 212px;
+		position: absolute;
 		margin-top: -80px;
 		margin-left: 15px;
 		background-image: url(/img/career-header-icon.svg);
@@ -54,8 +70,8 @@
 	
 	h2 {
 		position: absolute;
-		top: 8px;
-		left: 60px;
+		top: 85px;
+		left: 40px;
 		transform: rotate(32deg);
 		color: $blue;
 	}

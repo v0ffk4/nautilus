@@ -901,41 +901,59 @@ img {
 }
 #career {}
 #career-container {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
     /* openings */
 }
 #career-container .career {
     margin-left: 30%;
     border-bottom: 2px dotted #141414;
+    margin-right: 2rem;
+}
+#career-container h2 {
+    text-align: right;
+}
+#career-container h3.section-header {
+    margin: 0 0 2rem 4rem;
+    line-height: 2rem;
 }
 #career-container .openings {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    margin: 0 2rem;
     /* position */
 }
 #career-container .openings .position {
-    margin: 2rem 0 0 0;
-    width: 45%;
     padding-left: 2rem;
     border-left: 2px dotted #141414;
+    @media$small {
+        margin: 2rem 0 0 0;
+        width: 45%;
+    }
 }
-#career-container .openings .position h3 {}
 #career-container .openings .position p {
     margin-bottom: 0;
+}
+@media screen and (min-width:600px) {
+    #career-container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+@media screen and (min-width:600px) {
+    #career-container .openings {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
 }
 /* career-content */
 .tribal {
@@ -953,6 +971,7 @@ img {
 .career-stripe .career-header-icon {
     width: 208px;
     height: 212px;
+    position: absolute;
     margin-top: -80px;
     margin-left: 15px;
     background-image: url(/img/career-header-icon.svg);
@@ -960,8 +979,8 @@ img {
 }
 .career-stripe h2 {
     position: absolute;
-    top: 8px;
-    left: 60px;
+    top: 85px;
+    left: 40px;
     -webkit-transform: rotate(32deg);
             transform: rotate(32deg);
     color: #81bef7;

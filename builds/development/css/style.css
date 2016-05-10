@@ -1200,11 +1200,7 @@ img {
             align-items: flex-end;
 }
 .footer-panel nav {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
+    display: none;
 }
 .footer-panel nav ul {
     width: 100%;
@@ -1240,5 +1236,14 @@ img {
 .footer-panel .social img {
     width: 30px;
     margin-left: 15px;
+}
+@media screen and (min-width:900px) {
+    .footer-panel nav {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+    }
 }
 /* footer-panel */

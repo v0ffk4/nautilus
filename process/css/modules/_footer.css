@@ -31,8 +31,11 @@
 	align-items: flex-end;
 
 	nav {
-		display: flex;
-		width: 100%;
+		display: none;
+		@media $medium {
+			display: flex;
+			width: 100%;
+		}
 
 		ul {
 			width: 100%;

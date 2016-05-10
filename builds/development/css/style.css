@@ -418,6 +418,7 @@ img {
 }
 @media screen and (min-width:600px) {
     .col-left, .col-right {
+        background-color: #f93849;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -473,8 +474,18 @@ img {
     float: right;
     background-image: url(/img/header-stripe.png);
     background-repeat: repeat-x;
+    position: relative;
 }
 /* navbar-lrg */
+#header .burger {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    background-image: url(/img/icon-burger.svg);
+    background-size: 100%;
+}
 #header ul.navbar-lrg {
     display: none;
 }
@@ -521,6 +532,11 @@ img {
         -webkit-flex-grow: 1;
             -ms-flex-positive: 1;
                 flex-grow: 1;
+    }
+}
+@media screen and (min-width:600px) {
+    #header .burger {
+        display: none;
     }
 }
 @media screen and (min-width:600px) {

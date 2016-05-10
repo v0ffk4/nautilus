@@ -8,6 +8,7 @@
 	min-width: 20%;
 	display: none;
 	@media $small {
+		background-color: $red;
 		display: flex;
 		flex-direction: column;
 	}

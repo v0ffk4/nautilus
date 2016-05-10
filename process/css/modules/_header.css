@@ -43,6 +43,7 @@
 		float: right;
 		background-image: url(/img/header-stripe.png);
 		background-repeat: repeat-x;
+		position: relative;
 		@media $small {
 			height: auto;
 			float: none;
@@ -51,6 +52,21 @@
 			flex-grow: 1;
 		}
 	} /* navbar-lrg */
+
+	.burger {
+		width: 36px;
+		height: 36px;
+		position: absolute;
+		right: 10px;
+		top: 6px;
+		background-image: url(/img/icon-burger.svg);
+		background-size: 100%;
+
+
+		@media $small {
+			display: none;
+		}
+	}
 
 	ul.navbar-lrg {
 		display: none;

@@ -5,20 +5,25 @@
 
 .col-left,
 .col-right {
-	min-width: 20%;
 	display: none;
-	@media $small {
-		background-color: $red;
+	@media $medium {
 		display: flex;
 		flex-direction: column;
+		min-width: 10%
+	}
+	@media $large {
+		width: 20%;
 	}
 }
 
 .col-cent {
 	width: 100%;
-	@media $small {
+	@media $medium {
 		display: flex;
-		width: 60%;
+		width: 80%;
 		margin: 0 auto;
+	}
+	@media $large {
+		width: 60%;
 	}
 }

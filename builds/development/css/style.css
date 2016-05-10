@@ -1153,7 +1153,7 @@ img {
 }
 #footer {
     margin-top: 5rem;
-    height: 200px;
+    min-height: 200px;
     background-image: url(/img/footer-wave.svg), url(/img/footer-bottom.svg);
     background-size: 1%, 100%;
     background-repeat: repeat-x, no-repeat;
@@ -1163,20 +1163,25 @@ img {
 #footer-container {
     position: relative;
     height: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
 }
+@media screen and (min-width:600px) {
+    #footer-container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+}
+/* footer-container */
 .fish {
     position: absolute;
     width: 260px;
@@ -1223,24 +1228,13 @@ img {
 /* nav */
 .footer-panel .footer-content-bottom {
     width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-}
-.footer-panel .social {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    text-align: center;
+    margin-top: 120px;
 }
 .footer-panel .social img {
+    display: inline;
     width: 30px;
-    margin-left: 15px;
+    margin: 0 0 15px 15px;
 }
 @media screen and (min-width:900px) {
     .footer-panel nav {
@@ -1249,6 +1243,32 @@ img {
         display: -ms-flexbox;
         display: flex;
         width: 100%;
+    }
+}
+@media screen and (min-width:600px) {
+    .footer-panel .footer-content-bottom {
+        margin-top: inherit;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+}
+@media screen and (min-width:600px) {
+    .footer-panel .social {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+@media screen and (min-width:600px) {
+    .footer-panel .social img {
+        display: block;
     }
 }
 /* footer-panel */

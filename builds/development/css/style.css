@@ -925,6 +925,12 @@ img {
     margin: 0 0 2rem 4rem;
     line-height: 2rem;
 }
+#career-container h3.section-header img {
+    display: inline-block;
+    margin: 0 5px -4px 0;
+    width: 18px;
+    height: 18px;
+}
 #career-container .openings {
     margin: 0 2rem;
     /* position */
@@ -1067,14 +1073,15 @@ img {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     /* li */
 }
 #partners ul.partner li img {
     height: 75px;
-    width: 150px;
+    width: 120px;
     margin: 0 5rem 2rem 2rem;
 }
 /* partner */
@@ -1084,7 +1091,7 @@ img {
 }
 @media screen and (min-width:1200px) {
     #partners ul.partner li img {
-        width: 150px;
+        width: 100px;
     }
 }
 /* section */

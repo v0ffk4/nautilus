@@ -19,15 +19,15 @@
 		list-style: none;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: center;
 		
 		li {			
 			img {
 				height: 75px;
-				width: 150px;
+				width: 120px;
 				margin: 0 5rem 2rem 2rem;
 				@media $large {
-					width: 150px;
+					width: 100px;
 
 				}
 			}

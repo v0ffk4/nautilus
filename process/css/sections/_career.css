@@ -20,6 +20,14 @@
 	h3.section-header {
 		margin: 0 0 2rem 4rem;
 		line-height: 2rem;
+		
+		img {
+			display: inline-block;
+			margin: 0 5px -4px 0;
+			width: 18px;
+			height: 18px;
+		}
+
 	}
 
 	.openings {

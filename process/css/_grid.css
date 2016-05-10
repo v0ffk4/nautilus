@@ -7,7 +7,6 @@
 .col-right {
 	min-width: 20%;
 	display: none;
-	background-color: red;
 	@media $small {
 		display: flex;
 		flex-direction: column;

@@ -23,4 +23,6 @@ $large:		screen and (min-width:1200px);
 $container-default-width:	80%;
 $container-max-width:		1200px;
 
+$small-side-padding: 2rem;
+
 $link-transition-duration: 0.5s;

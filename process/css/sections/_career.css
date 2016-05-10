@@ -10,7 +10,7 @@
 	.career {
 		margin-left: 30%;
 		border-bottom: 2px dotted $dark-grey;
-		margin-right:2rem;
+		margin-right: $small-side-padding;
 	}
 
 	h2 {
@@ -23,7 +23,7 @@
 	}
 
 	.openings {
-		margin: 0 2rem;
+		margin: 0 $small-side-padding;
 		@media $small {
 			display: flex;
 			justify-content: space-between;

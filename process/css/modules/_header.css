@@ -9,8 +9,7 @@
 	}
 
 	.col-left {
-
-		@media $small {
+		@media $medium {
 			display: flex;
 		}
 		
@@ -63,14 +62,14 @@
 		background-size: 100%;
 
 
-		@media $small {
+		@media $medium {
 			display: none;
 		}
 	}
 
 	ul.navbar-lrg {
 		display: none;
-		@media $small {
+		@media $medium {
 			display: flex;
 			list-style: none;
 		}
@@ -89,9 +88,7 @@
 		@media $small {
 			width: auto;
 			height: 74px;
-		}
-		
-		
+		}	
 	}
 
 } /* header */

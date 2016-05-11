@@ -1,4 +1,5 @@
-#shops {
+
+#contacts {
 	margin-bottom: 15rem;
 }
 
@@ -8,6 +9,10 @@
 		flex-direction: column;
 	}
 } /* shops-content */
+
+#map {
+	height: 400px;
+}
 
 .shops-stripe {
 	width: 100%;

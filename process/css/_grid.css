@@ -18,8 +18,10 @@
 
 .col-cent {
 	width: 100%;
-	@media $medium {
+	@media $small {
 		display: flex;
+	}
+	@media $medium {
 		width: 80%;
 		margin: 0 auto;
 	}

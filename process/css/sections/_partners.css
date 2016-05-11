@@ -25,7 +25,7 @@
 			img {
 				height: 75px;
 				width: 120px;
-				margin: 0 5rem 2rem 2rem;
+				margin: 0 2rem 2rem 2rem;
 				@media $large {
 					width: 100px;
 

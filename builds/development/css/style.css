@@ -485,6 +485,7 @@ img {
     width: 50%;
     height: 50px;
     float: right;
+    font-weight: 300;
     background-image: url(/img/header-stripe.png);
     background-repeat: repeat-x;
     position: relative;
